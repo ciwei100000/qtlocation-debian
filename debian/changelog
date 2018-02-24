@@ -1,8 +1,8 @@
-qtlocation-opensource-src (5.9.4+dfsg-0ubuntu1) UNRELEASED; urgency=medium
+qtlocation-opensource-src (5.9.4+dfsg-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
- -- Simon Quigley <tsimonq2@ubuntu.com>  Sat, 24 Feb 2018 13:21:17 -0600
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Sat, 24 Feb 2018 13:29:02 -0600
 
 qtlocation-opensource-src (5.9.3+dfsg-0ubuntu1) bionic; urgency=medium
 
