@@ -9,17 +9,17 @@ Uploaders: Timo Jyrinki <timo@debian.org>,
            Simon Quigley <tsimonq2@ubuntu.com>
 Build-Depends: debhelper (>= 10.3),
                libicu-dev,
-               libqt5opengl5-dev (>= 5.9.2+dfsg~),
+               libqt5opengl5-dev (>= 5.9.4+dfsg~),
                pkg-kde-tools,
-               qml-module-qttest (>= 5.9.2~),
-               qtbase5-private-dev (>= 5.9.2+dfsg~),
-               qtdeclarative5-private-dev (>= 5.9.2~),
+               qml-module-qttest (>= 5.9.4~),
+               qtbase5-private-dev (>= 5.9.4+dfsg~),
+               qtdeclarative5-private-dev (>= 5.9.4~),
                xauth,
                xvfb,
                zlib1g-dev
-Build-Depends-Indep: libqt5sql5-sqlite (>= 5.9.2+dfsg~),
-                     qtbase5-doc-html (>= 5.9.1+dfsg~),
-                     qttools5-dev-tools (>= 5.9.2~)
+Build-Depends-Indep: libqt5sql5-sqlite (>= 5.9.4+dfsg~),
+                     qtbase5-doc-html (>= 5.9.4+dfsg~),
+                     qttools5-dev-tools (>= 5.9.4~)
 Standards-Version: 4.1.1
 Homepage: http://qt-project.org/
 Vcs-Git: https://anonscm.debian.org/git/pkg-kde/qt/qtlocation.git
