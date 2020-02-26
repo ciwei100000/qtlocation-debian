@@ -6,6 +6,7 @@ qtlocation-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
   * Update debian/copyright.
   * Stop installing QGeoPolygonPrivate include in qtpositioning5-dev.
   * Update debian/libqt5location5.symbols from the current build log.
+  * Add weatherinfo icons licensing to debian/copyright.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 25 Feb 2020 18:48:05 +0300
 

@@ -163,6 +163,24 @@ Files: src/3rdparty/poly2tri/*
 Copyright: 2009-2010, Poly2Tri Contributors
 License: BSD-3-clause
 
+Files: examples/positioning/weatherinfo/icons/weather-fog.png
+       examples/positioning/weatherinfo/icons/weather-haze.png
+       examples/positioning/weatherinfo/icons/weather-icy.png
+       examples/positioning/weatherinfo/icons/weather-sleet.png
+       examples/positioning/weatherinfo/icons/weather-sunny.png
+       examples/positioning/weatherinfo/icons/weather-sunny-very-few-clouds.png
+       examples/positioning/weatherinfo/icons/weather-thundershower.png
+Copyright: DarKobra (C Stark)
+License: public-domain
+
+Files: examples/positioning/weatherinfo/icons/weather-few-clouds.png
+       examples/positioning/weatherinfo/icons/weather-overcast.png
+       examples/positioning/weatherinfo/icons/weather-showers.png
+       examples/positioning/weatherinfo/icons/weather-snow.png
+       examples/positioning/weatherinfo/icons/weather-storm.png
+Copyright: Tango Project contributors
+License: public-domain
+
 Files: debian/*
 Copyright: 2007-2012 Fathi Boudra <fabo@debian.org>
            2007-2012 Sune Vuorela <debian@pusling.com>
@@ -350,3 +368,6 @@ License: ISC
  LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE
  OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
  PERFORMANCE OF THIS SOFTWARE.
+
+License: public-domain
+ The icons in this repository are herefore released into the Public Domain.
