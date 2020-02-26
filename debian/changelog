@@ -4,6 +4,7 @@ qtlocation-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Bump Qt build-dependencies to 5.14.1.
   * Update debian/copyright.
+  * Stop installing QGeoPolygonPrivate include in qtpositioning5-dev.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 25 Feb 2020 18:48:05 +0300
 
