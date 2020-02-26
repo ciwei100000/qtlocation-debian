@@ -1,6 +1,5 @@
-qtlocation-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
+qtlocation-opensource-src (5.14.1+dfsg-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * New upstream release.
   * Bump Qt build-dependencies to 5.14.1.
   * Update debian/copyright.
@@ -9,7 +8,7 @@ qtlocation-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
   * Add weatherinfo icons licensing to debian/copyright.
   * Bump Standards-Version to 4.5.0, no changes needed.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 25 Feb 2020 18:48:05 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 26 Feb 2020 14:31:05 +0300
 
 qtlocation-opensource-src (5.12.5+dfsg-5) unstable; urgency=medium
 
