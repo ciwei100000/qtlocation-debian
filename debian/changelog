@@ -3,6 +3,8 @@ qtlocation-opensource-src (5.14.2+dfsg-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * New upstream release.
   * Bump Qt build-dependencies to 5.14.2.
+  * Backport patches to fix mapbox-gl-native build with GCC 10 (closes:
+    #957731).
 
   [ Bas Couwenberg ]
   * Drop libmapbox-variant-dev & libmapbox-wagyu-dev build dependencies
