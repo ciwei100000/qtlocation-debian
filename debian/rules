@@ -27,6 +27,8 @@ ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
 	$(MAKE) install -Csrc/imports INSTALL_ROOT=$(CURDIR)/test_root
 	# Qt QML engine is broken on several architectures:
 	# mips* (#868745), sparc64 (#894726), ia64 (#929682), hppa (no bug).
+	#
+	# On riscv64, tst_QGeoTiledMap::fetchTiles is failing (prefetch count incorrect).
 ifneq (,$(filter $(DEB_HOST_ARCH),hppa ia64 mips mips64el mipsel riscv64 sparc64))
 	-xvfb-run -a -s "-screen 0 1024x768x24 +extension RANDR +extension RENDER +extension GLX" \
 		dh_auto_test -- -Ctests/auto HOME=$(CURDIR)/test_home \
