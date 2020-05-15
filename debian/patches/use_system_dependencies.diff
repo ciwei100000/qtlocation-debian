@@ -1,7 +1,7 @@
 Description: remove some include paths to pick up system headers
 Author: Dmitry Shachnev <mitya57@debian.org>
 Forwarded: not-needed
-Last-Update: 2019-12-30
+Last-Update: 2020-04-27
 
 --- a/src/3rdparty/mapbox-gl-native/mapbox-gl-native.pro
 +++ b/src/3rdparty/mapbox-gl-native/mapbox-gl-native.pro
@@ -25,16 +25,3 @@ Last-Update: 2019-12-30
      deps/shelf-pack/2.1.1 \
      deps/shelf-pack/2.1.1/include \
      deps/supercluster/0.2.2 \
-@@ -434,12 +428,8 @@ INCLUDEPATH += \
-     deps/tao_tuple/28626e99/include \
-     deps/unique_resource/cba309e \
-     deps/unique_resource/cba309e/include \
--    deps/variant/1.1.4 \
--    deps/variant/1.1.4/include \
-     deps/vector-tile/1.0.2 \
-     deps/vector-tile/1.0.2/include \
--    deps/wagyu/0.4.3 \
--    deps/wagyu/0.4.3/include \
-     include \
-     platform/default \
-     platform/qt \

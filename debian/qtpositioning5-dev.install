@@ -6,7 +6,6 @@ usr/include/*/qt5/QtPositioning/QGeoCoordinate
 usr/include/*/qt5/QtPositioning/QGeoLocation
 usr/include/*/qt5/QtPositioning/QGeoPath
 usr/include/*/qt5/QtPositioning/QGeoPolygon
-usr/include/*/qt5/QtPositioning/QGeoPolygonPrivate
 usr/include/*/qt5/QtPositioning/QGeoPositionInfo
 usr/include/*/qt5/QtPositioning/QGeoPositionInfoSource
 usr/include/*/qt5/QtPositioning/QGeoPositionInfoSourceFactory

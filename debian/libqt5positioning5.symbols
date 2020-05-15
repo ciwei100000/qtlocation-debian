@@ -1,10 +1,12 @@
-# SymbolsHelper-Confirmed: 5.12.8 amd64 i386 s390x
+# SymbolsHelper-Confirmed: 5.14.1 amd64
 libQt5Positioning.so.5 libqt5positioning5 #MINVER#
 * Build-Depends-Package: qtpositioning5-dev
  Qt_5.0@Qt_5.0 5.6.0
  Qt_5.10@Qt_5.10 5.10.1
  Qt_5.11@Qt_5.11 5.11.0
  Qt_5.12@Qt_5.12 5.12.0
+ Qt_5.13@Qt_5.13 5.14.1
+ Qt_5.14@Qt_5.14 5.14.1
  Qt_5.1@Qt_5.1 5.6.0
  Qt_5.2@Qt_5.2 5.6.0
  Qt_5.3@Qt_5.3 5.6.0
@@ -86,6 +88,7 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  _ZN12QGeoLocation10setAddressERK11QGeoAddress@Qt_5 5.6.0
  _ZN12QGeoLocation13setCoordinateERK14QGeoCoordinate@Qt_5 5.6.0
  _ZN12QGeoLocation14setBoundingBoxERK13QGeoRectangle@Qt_5 5.6.0
+ _ZN12QGeoLocation21setExtendedAttributesERK4QMapI7QString8QVariantE@Qt_5 5.14.1
  _ZN12QGeoLocationC1ERKS_@Qt_5 5.6.0
  _ZN12QGeoLocationC1Ev@Qt_5 5.6.0
  _ZN12QGeoLocationC2ERKS_@Qt_5 5.6.0
@@ -104,6 +107,17 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  _ZN13QClipperUtils12pathsToQListERKSt6vectorIS0_IN12QtClipperLib8IntPointESaIS2_EESaIS4_EE@Qt_5_PRIVATE_API 5.9.0
  _ZN13QClipperUtils12qListToPathsERK5QListIS0_I15QDoubleVector2DEE@Qt_5_PRIVATE_API 5.9.0
  _ZN13QClipperUtils18clipperScaleFactorEv@Qt_5_PRIVATE_API 5.9.0
+ _ZN13QGeoPathEager16staticMetaObjectE@Qt_5_PRIVATE_API 5.14.1
+ _ZN13QGeoPathEagerC1ERK5QListI14QGeoCoordinateERKd@Qt_5_PRIVATE_API 5.14.1
+ _ZN13QGeoPathEagerC1ERK8QGeoPath@Qt_5_PRIVATE_API 5.14.1
+ _ZN13QGeoPathEagerC1ERK9QGeoShape@Qt_5_PRIVATE_API 5.14.1
+ _ZN13QGeoPathEagerC1Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN13QGeoPathEagerC2ERK5QListI14QGeoCoordinateERKd@Qt_5_PRIVATE_API 5.14.1
+ _ZN13QGeoPathEagerC2ERK8QGeoPath@Qt_5_PRIVATE_API 5.14.1
+ _ZN13QGeoPathEagerC2ERK9QGeoShape@Qt_5_PRIVATE_API 5.14.1
+ _ZN13QGeoPathEagerC2Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN13QGeoPathEagerD1Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN13QGeoPathEagerD2Ev@Qt_5_PRIVATE_API 5.14.1
  _ZN13QGeoRectangle10setTopLeftERK14QGeoCoordinate@Qt_5 5.6.0
  _ZN13QGeoRectangle11setTopRightERK14QGeoCoordinate@Qt_5 5.6.0
  _ZN13QGeoRectangle13setBottomLeftERK14QGeoCoordinate@Qt_5 5.6.0
@@ -150,7 +164,9 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  _ZN14QLocationUtils11getNmeaTimeERK10QByteArrayP5QTime@Qt_5_PRIVATE_API 5.11.1
  _ZN14QLocationUtils14getNmeaLatLongERK10QByteArraycS2_cPdS3_@Qt_5_PRIVATE_API 5.11.1
  _ZN14QLocationUtils18getPosInfoFromNmeaEPKciP16QGeoPositionInfodPb@Qt_5_PRIVATE_API 5.11.1
+ _ZN14QLocationUtils18getSatInfoFromNmeaEPKciR5QListI17QGeoSatelliteInfoE@Qt_5_PRIVATE_API 5.14.1
  _ZN14QLocationUtils19getNmeaSentenceTypeEPKci@Qt_5_PRIVATE_API 5.11.1
+ _ZN14QLocationUtils19getSatInUseFromNmeaEPKciR5QListIiE@Qt_5_PRIVATE_API 5.14.1
  _ZN14QLocationUtils20hasValidNmeaChecksumEPKci@Qt_5_PRIVATE_API 5.11.1
  _ZN15QDoubleVector2D9normalizeEv@Qt_5_PRIVATE_API 5.6.0
  _ZN15QDoubleVector2DC1ERK15QDoubleVector3D@Qt_5_PRIVATE_API 5.6.0
@@ -158,6 +174,25 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  _ZN15QDoubleVector3D6normalERKS_S1_@Qt_5_PRIVATE_API 5.6.0
  _ZN15QDoubleVector3D6normalERKS_S1_S1_@Qt_5_PRIVATE_API 5.6.0
  _ZN15QDoubleVector3D9normalizeEv@Qt_5_PRIVATE_API 5.6.0
+ _ZN15QGeoPathPrivate11extendShapeERK14QGeoCoordinate@Qt_5_PRIVATE_API 5.14.1
+ _ZN15QGeoPathPrivate13addCoordinateERK14QGeoCoordinate@Qt_5_PRIVATE_API 5.14.1
+ _ZN15QGeoPathPrivate16insertCoordinateEiRK14QGeoCoordinate@Qt_5_PRIVATE_API 5.14.1
+ _ZN15QGeoPathPrivate16removeCoordinateERK14QGeoCoordinate@Qt_5_PRIVATE_API 5.14.1
+ _ZN15QGeoPathPrivate16removeCoordinateEi@Qt_5_PRIVATE_API 5.14.1
+ _ZN15QGeoPathPrivate17replaceCoordinateEiRK14QGeoCoordinate@Qt_5_PRIVATE_API 5.14.1
+ _ZN15QGeoPathPrivate18computeBoundingBoxEv@Qt_5_PRIVATE_API 5.14.1
+ _ZN15QGeoPathPrivate7setPathERK5QListI14QGeoCoordinateE@Qt_5_PRIVATE_API 5.14.1
+ _ZN15QGeoPathPrivate8setWidthERKd@Qt_5_PRIVATE_API 5.14.1
+ _ZN15QGeoPathPrivate9clearPathEv@Qt_5_PRIVATE_API 5.14.1
+ _ZN15QGeoPathPrivate9markDirtyEv@Qt_5_PRIVATE_API 5.14.1
+ _ZN15QGeoPathPrivate9translateEdd@Qt_5_PRIVATE_API 5.14.1
+ _ZN15QGeoPathPrivateC1ERK5QListI14QGeoCoordinateEd@Qt_5_PRIVATE_API 5.14.1
+ _ZN15QGeoPathPrivateC1Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN15QGeoPathPrivateC2ERK5QListI14QGeoCoordinateEd@Qt_5_PRIVATE_API 5.14.1
+ _ZN15QGeoPathPrivateC2Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN15QGeoPathPrivateD0Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN15QGeoPathPrivateD1Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN15QGeoPathPrivateD2Ev@Qt_5_PRIVATE_API 5.14.1
  _ZN16QDoubleMatrix4x411perspectiveEdddd@Qt_5_PRIVATE_API 5.9.0
  _ZN16QDoubleMatrix4x415flipCoordinatesEv@Qt_5_PRIVATE_API 5.9.0
  _ZN16QDoubleMatrix4x415projectedRotateEdddd@Qt_5_PRIVATE_API 5.9.0
@@ -182,6 +217,17 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  _ZN16QDoubleMatrix4x4C2EPKd@Qt_5_PRIVATE_API 5.9.0
  _ZN16QDoubleMatrix4x4C2EPKdii@Qt_5_PRIVATE_API 5.9.0
  _ZN16QDoubleMatrix4x4dVEd@Qt_5_PRIVATE_API 5.9.0
+ _ZN16QGeoPolygonEager16staticMetaObjectE@Qt_5_PRIVATE_API 5.14.1
+ _ZN16QGeoPolygonEagerC1ERK11QGeoPolygon@Qt_5_PRIVATE_API 5.14.1
+ _ZN16QGeoPolygonEagerC1ERK5QListI14QGeoCoordinateE@Qt_5_PRIVATE_API 5.14.1
+ _ZN16QGeoPolygonEagerC1ERK9QGeoShape@Qt_5_PRIVATE_API 5.14.1
+ _ZN16QGeoPolygonEagerC1Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN16QGeoPolygonEagerC2ERK11QGeoPolygon@Qt_5_PRIVATE_API 5.14.1
+ _ZN16QGeoPolygonEagerC2ERK5QListI14QGeoCoordinateE@Qt_5_PRIVATE_API 5.14.1
+ _ZN16QGeoPolygonEagerC2ERK9QGeoShape@Qt_5_PRIVATE_API 5.14.1
+ _ZN16QGeoPolygonEagerC2Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN16QGeoPolygonEagerD1Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN16QGeoPolygonEagerD2Ev@Qt_5_PRIVATE_API 5.14.1
  _ZN16QGeoPositionInfo12setAttributeENS_9AttributeEd@Qt_5 5.6.0
  _ZN16QGeoPositionInfo12setTimestampERK9QDateTime@Qt_5 5.6.0
  _ZN16QGeoPositionInfo13setCoordinateERK14QGeoCoordinate@Qt_5 5.6.0
@@ -202,13 +248,27 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  _ZN17QGeoSatelliteInfo17setSignalStrengthEi@Qt_5 5.6.0
  _ZN17QGeoSatelliteInfo18setSatelliteSystemENS_15SatelliteSystemE@Qt_5 5.6.0
  _ZN17QGeoSatelliteInfo22setSatelliteIdentifierEi@Qt_5 5.6.0
+ _ZN17QGeoSatelliteInfoC1ER24QGeoSatelliteInfoPrivate@Qt_5_PRIVATE_API 5.14.1
  _ZN17QGeoSatelliteInfoC1ERKS_@Qt_5 5.6.0
  _ZN17QGeoSatelliteInfoC1Ev@Qt_5 5.6.0
+ _ZN17QGeoSatelliteInfoC2ER24QGeoSatelliteInfoPrivate@Qt_5_PRIVATE_API 5.14.1
  _ZN17QGeoSatelliteInfoC2ERKS_@Qt_5 5.6.0
  _ZN17QGeoSatelliteInfoC2Ev@Qt_5 5.6.0
  _ZN17QGeoSatelliteInfoD1Ev@Qt_5 5.6.0
  _ZN17QGeoSatelliteInfoD2Ev@Qt_5 5.6.0
  _ZN17QGeoSatelliteInfoaSERKS_@Qt_5 5.6.0
+ _ZN18QGeoPolygonPrivate10removeHoleEi@Qt_5_PRIVATE_API 5.14.1
+ _ZN18QGeoPolygonPrivate17updateClipperPathEv@Qt_5_PRIVATE_API 5.14.1
+ _ZN18QGeoPolygonPrivate7addHoleERK5QListI14QGeoCoordinateE@Qt_5_PRIVATE_API 5.14.1
+ _ZN18QGeoPolygonPrivate9markDirtyEv@Qt_5_PRIVATE_API 5.14.1
+ _ZN18QGeoPolygonPrivate9translateEdd@Qt_5_PRIVATE_API 5.14.1
+ _ZN18QGeoPolygonPrivateC1ERK5QListI14QGeoCoordinateE@Qt_5_PRIVATE_API 5.14.1
+ _ZN18QGeoPolygonPrivateC1Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN18QGeoPolygonPrivateC2ERK5QListI14QGeoCoordinateE@Qt_5_PRIVATE_API 5.14.1
+ _ZN18QGeoPolygonPrivateC2Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN18QGeoPolygonPrivateD0Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN18QGeoPolygonPrivateD1Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN18QGeoPolygonPrivateD2Ev@Qt_5_PRIVATE_API 5.14.1
  _ZN19QGeoAreaMonitorInfo13setExpirationERK9QDateTime@Qt_5 5.6.0
  _ZN19QGeoAreaMonitorInfo13setPersistentEb@Qt_5 5.6.0
  _ZN19QGeoAreaMonitorInfo25setNotificationParametersERK4QMapI7QString8QVariantE@Qt_5 5.6.0
@@ -233,6 +293,18 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  _ZN20QGeoCoordinateObjectD0Ev@Qt_5_PRIVATE_API 5.11.0
  _ZN20QGeoCoordinateObjectD1Ev@Qt_5_PRIVATE_API 5.11.0
  _ZN20QGeoCoordinateObjectD2Ev@Qt_5_PRIVATE_API 5.11.0
+ _ZN20QGeoPathPrivateEager13addCoordinateERK14QGeoCoordinate@Qt_5_PRIVATE_API 5.14.1
+ _ZN20QGeoPathPrivateEager17updateBoundingBoxEv@Qt_5_PRIVATE_API 5.14.1
+ _ZN20QGeoPathPrivateEager18computeBoundingBoxEv@Qt_5_PRIVATE_API 5.14.1
+ _ZN20QGeoPathPrivateEager9markDirtyEv@Qt_5_PRIVATE_API 5.14.1
+ _ZN20QGeoPathPrivateEager9translateEdd@Qt_5_PRIVATE_API 5.14.1
+ _ZN20QGeoPathPrivateEagerC1ERK5QListI14QGeoCoordinateEd@Qt_5_PRIVATE_API 5.14.1
+ _ZN20QGeoPathPrivateEagerC1Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN20QGeoPathPrivateEagerC2ERK5QListI14QGeoCoordinateEd@Qt_5_PRIVATE_API 5.14.1
+ _ZN20QGeoPathPrivateEagerC2Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN20QGeoPathPrivateEagerD0Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN20QGeoPathPrivateEagerD1Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN20QGeoPathPrivateEagerD2Ev@Qt_5_PRIVATE_API 5.14.1
  _ZN20QGeoPositionInfoDataC1Ev@Qt_5_PRIVATE_API 5.6.0
  _ZN20QGeoPositionInfoDataC2Ev@Qt_5_PRIVATE_API 5.6.0
  _ZN21QGeoAreaMonitorSource10areaExitedERK19QGeoAreaMonitorInfoRK16QGeoPositionInfo@Qt_5 5.6.0
@@ -253,67 +325,40 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  _ZN21QGeoAreaMonitorSourceD2Ev@Qt_5 5.6.0
  _ZN21QGeoSatelliteInfoData13SatelliteInfoC1Ev@Qt_5_PRIVATE_API 5.6.0
  _ZN21QGeoSatelliteInfoData13SatelliteInfoC2Ev@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress10setAddressERK11QGeoAddress@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress10setCountryERK7QString@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress11cityChangedEv@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress11qt_metacastEPKc@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress11setDistrictERK7QString@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress11textChangedEv@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress12stateChangedEv@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress13countyChangedEv@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress13setPostalCodeERK7QString@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress13streetChangedEv@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress14countryChangedEv@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress14setCountryCodeERK7QString@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress15districtChangedEv@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress16staticMetaObjectE@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress17postalCodeChangedEv@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress18countryCodeChangedEv@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress22isTextGeneratedChangedEv@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress7setCityERK7QString@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress7setTextERK7QString@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress8setStateERK7QString@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress9setCountyERK7QString@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddress9setStreetERK7QString@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddressC1EP7QObject@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddressC1ERK11QGeoAddressP7QObject@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddressC2EP7QObject@Qt_5_PRIVATE_API 5.6.0
- _ZN22QDeclarativeGeoAddressC2ERK11QGeoAddressP7QObject@Qt_5_PRIVATE_API 5.6.0
  _ZN22QGeoPositionInfoSource11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.6.0
  _ZN22QGeoPositionInfoSource11qt_metacastEPKc@Qt_5 5.6.0
  _ZN22QGeoPositionInfoSource12createSourceERK7QStringP7QObject@Qt_5 5.6.0
+ _ZN22QGeoPositionInfoSource12createSourceERK7QStringRK4QMapIS0_8QVariantEP7QObject@Qt_5 5.14.1
  _ZN22QGeoPositionInfoSource13updateTimeoutEv@Qt_5 5.6.0
  _ZN22QGeoPositionInfoSource15positionUpdatedERK16QGeoPositionInfo@Qt_5 5.6.0
  _ZN22QGeoPositionInfoSource16availableSourcesEv@Qt_5 5.6.0
  _ZN22QGeoPositionInfoSource16staticMetaObjectE@Qt_5 5.6.0
  _ZN22QGeoPositionInfoSource17setUpdateIntervalEi@Qt_5 5.6.0
+ _ZN22QGeoPositionInfoSource18setBackendPropertyERK7QStringRK8QVariant@Qt_5 5.14.1
  _ZN22QGeoPositionInfoSource19createDefaultSourceEP7QObject@Qt_5 5.6.0
+ _ZN22QGeoPositionInfoSource19createDefaultSourceERK4QMapI7QString8QVariantEP7QObject@Qt_5 5.14.1
  _ZN22QGeoPositionInfoSource30setPreferredPositioningMethodsE6QFlagsINS_17PositioningMethodEE@Qt_5 5.6.0
  _ZN22QGeoPositionInfoSource34supportedPositioningMethodsChangedEv@Qt_5 5.12.2
  _ZN22QGeoPositionInfoSource5errorENS_5ErrorE@Qt_5 5.6.0
  _ZN22QGeoPositionInfoSourceC1EP7QObject@Qt_5 5.6.0
+ _ZN22QGeoPositionInfoSourceC1ER29QGeoPositionInfoSourcePrivateP7QObject@Qt_5_PRIVATE_API 5.14.1
  _ZN22QGeoPositionInfoSourceC2EP7QObject@Qt_5 5.6.0
+ _ZN22QGeoPositionInfoSourceC2ER29QGeoPositionInfoSourcePrivateP7QObject@Qt_5_PRIVATE_API 5.14.1
  _ZN22QGeoPositionInfoSourceD0Ev@Qt_5 5.6.0
  _ZN22QGeoPositionInfoSourceD1Ev@Qt_5 5.6.0
  _ZN22QGeoPositionInfoSourceD2Ev@Qt_5 5.6.0
- _ZN23QDeclarativeGeoLocation10setAddressEP22QDeclarativeGeoAddress@Qt_5_PRIVATE_API 5.6.0
- _ZN23QDeclarativeGeoLocation11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5_PRIVATE_API 5.6.0
- _ZN23QDeclarativeGeoLocation11qt_metacastEPKc@Qt_5_PRIVATE_API 5.6.0
- _ZN23QDeclarativeGeoLocation11setLocationERK12QGeoLocation@Qt_5_PRIVATE_API 5.6.0
- _ZN23QDeclarativeGeoLocation13setCoordinateE14QGeoCoordinate@Qt_5_PRIVATE_API 5.6.0
- _ZN23QDeclarativeGeoLocation14addressChangedEv@Qt_5_PRIVATE_API 5.6.0
- _ZN23QDeclarativeGeoLocation14setBoundingBoxERK13QGeoRectangle@Qt_5_PRIVATE_API 5.6.0
- _ZN23QDeclarativeGeoLocation16staticMetaObjectE@Qt_5_PRIVATE_API 5.6.0
- _ZN23QDeclarativeGeoLocation17coordinateChangedEv@Qt_5_PRIVATE_API 5.6.0
- _ZN23QDeclarativeGeoLocation18boundingBoxChangedEv@Qt_5_PRIVATE_API 5.6.0
- _ZN23QDeclarativeGeoLocationC1EP7QObject@Qt_5_PRIVATE_API 5.6.0
- _ZN23QDeclarativeGeoLocationC1ERK12QGeoLocationP7QObject@Qt_5_PRIVATE_API 5.6.0
- _ZN23QDeclarativeGeoLocationC2EP7QObject@Qt_5_PRIVATE_API 5.6.0
- _ZN23QDeclarativeGeoLocationC2ERK12QGeoLocationP7QObject@Qt_5_PRIVATE_API 5.6.0
- _ZN23QDeclarativeGeoLocationD0Ev@Qt_5_PRIVATE_API 5.6.0
- _ZN23QDeclarativeGeoLocationD1Ev@Qt_5_PRIVATE_API 5.6.0
- _ZN23QDeclarativeGeoLocationD2Ev@Qt_5_PRIVATE_API 5.6.0
+ _ZN23QGeoPolygonPrivateEager13addCoordinateERK14QGeoCoordinate@Qt_5_PRIVATE_API 5.14.1
+ _ZN23QGeoPolygonPrivateEager17updateBoundingBoxEv@Qt_5_PRIVATE_API 5.14.1
+ _ZN23QGeoPolygonPrivateEager18computeBoundingBoxEv@Qt_5_PRIVATE_API 5.14.1
+ _ZN23QGeoPolygonPrivateEager9markDirtyEv@Qt_5_PRIVATE_API 5.14.1
+ _ZN23QGeoPolygonPrivateEager9translateEdd@Qt_5_PRIVATE_API 5.14.1
+ _ZN23QGeoPolygonPrivateEagerC1ERK5QListI14QGeoCoordinateE@Qt_5_PRIVATE_API 5.14.1
+ _ZN23QGeoPolygonPrivateEagerC1Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN23QGeoPolygonPrivateEagerC2ERK5QListI14QGeoCoordinateE@Qt_5_PRIVATE_API 5.14.1
+ _ZN23QGeoPolygonPrivateEagerC2Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN23QGeoPolygonPrivateEagerD0Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN23QGeoPolygonPrivateEagerD1Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN23QGeoPolygonPrivateEagerD2Ev@Qt_5_PRIVATE_API 5.14.1
  _ZN23QGeoPositionInfoPrivate3getERK16QGeoPositionInfo@Qt_5_PRIVATE_API 5.11.2
  _ZN23QGeoPositionInfoPrivateD0Ev@Qt_5_PRIVATE_API 5.10.1
  _ZN23QGeoPositionInfoPrivateD1Ev@Qt_5_PRIVATE_API 5.10.1
@@ -321,16 +366,20 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  _ZN23QGeoSatelliteInfoSource11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.6.0
  _ZN23QGeoSatelliteInfoSource11qt_metacastEPKc@Qt_5 5.6.0
  _ZN23QGeoSatelliteInfoSource12createSourceERK7QStringP7QObject@Qt_5 5.6.0
+ _ZN23QGeoSatelliteInfoSource12createSourceERK7QStringRK4QMapIS0_8QVariantEP7QObject@Qt_5 5.14.1
  _ZN23QGeoSatelliteInfoSource14requestTimeoutEv@Qt_5 5.6.0
  _ZN23QGeoSatelliteInfoSource16availableSourcesEv@Qt_5 5.6.0
  _ZN23QGeoSatelliteInfoSource16staticMetaObjectE@Qt_5 5.6.0
  _ZN23QGeoSatelliteInfoSource17setUpdateIntervalEi@Qt_5 5.6.0
  _ZN23QGeoSatelliteInfoSource19createDefaultSourceEP7QObject@Qt_5 5.6.0
+ _ZN23QGeoSatelliteInfoSource19createDefaultSourceERK4QMapI7QString8QVariantEP7QObject@Qt_5 5.14.1
  _ZN23QGeoSatelliteInfoSource22satellitesInUseUpdatedERK5QListI17QGeoSatelliteInfoE@Qt_5 5.6.0
  _ZN23QGeoSatelliteInfoSource23satellitesInViewUpdatedERK5QListI17QGeoSatelliteInfoE@Qt_5 5.6.0
  _ZN23QGeoSatelliteInfoSource5errorENS_5ErrorE@Qt_5 5.6.0
  _ZN23QGeoSatelliteInfoSourceC1EP7QObject@Qt_5 5.6.0
+ _ZN23QGeoSatelliteInfoSourceC1ER30QGeoSatelliteInfoSourcePrivateP7QObject@Qt_5_PRIVATE_API 5.14.1
  _ZN23QGeoSatelliteInfoSourceC2EP7QObject@Qt_5 5.6.0
+ _ZN23QGeoSatelliteInfoSourceC2ER30QGeoSatelliteInfoSourcePrivateP7QObject@Qt_5_PRIVATE_API 5.14.1
  _ZN23QGeoSatelliteInfoSourceD0Ev@Qt_5 5.6.0
  _ZN23QGeoSatelliteInfoSourceD1Ev@Qt_5 5.6.0
  _ZN23QGeoSatelliteInfoSourceD2Ev@Qt_5 5.6.0
@@ -350,6 +399,14 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  _ZN23QNmeaPositionInfoSourceD0Ev@Qt_5 5.6.0
  _ZN23QNmeaPositionInfoSourceD1Ev@Qt_5 5.6.0
  _ZN23QNmeaPositionInfoSourceD2Ev@Qt_5 5.6.0
+ _ZN24QGeoSatelliteInfoPrivate3getERK17QGeoSatelliteInfo@Qt_5_PRIVATE_API 5.14.1
+ _ZN24QGeoSatelliteInfoPrivateC1ERKS_@Qt_5_PRIVATE_API 5.14.1
+ _ZN24QGeoSatelliteInfoPrivateC1Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN24QGeoSatelliteInfoPrivateC2ERKS_@Qt_5_PRIVATE_API 5.14.1
+ _ZN24QGeoSatelliteInfoPrivateC2Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN24QGeoSatelliteInfoPrivateD0Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN24QGeoSatelliteInfoPrivateD1Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN24QGeoSatelliteInfoPrivateD2Ev@Qt_5_PRIVATE_API 5.14.1
  _ZN29QGeoMercatorCoordinatePrivateC1ERKS_@Qt_5_PRIVATE_API 5.6.0
  _ZN29QGeoMercatorCoordinatePrivateC1Ev@Qt_5_PRIVATE_API 5.6.0
  _ZN29QGeoMercatorCoordinatePrivateC2ERKS_@Qt_5_PRIVATE_API 5.6.0
@@ -359,6 +416,23 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  _ZN29QGeoPositionInfoSourceFactoryD0Ev@Qt_5 5.6.0
  _ZN29QGeoPositionInfoSourceFactoryD1Ev@Qt_5 5.6.0
  _ZN29QGeoPositionInfoSourceFactoryD2Ev@Qt_5 5.6.0
+ _ZN29QGeoPositionInfoSourcePrivate10loadPluginEv@Qt_5_PRIVATE_API 5.14.1
+ _ZN29QGeoPositionInfoSourcePrivate13pluginsSortedEv@Qt_5_PRIVATE_API 5.14.1
+ _ZN29QGeoPositionInfoSourcePrivate18loadPluginMetadataER5QHashI7QString11QJsonObjectE@Qt_5_PRIVATE_API 5.14.1
+ _ZN29QGeoPositionInfoSourcePrivate18setBackendPropertyERK7QStringRK8QVariant@Qt_5_PRIVATE_API 5.14.1
+ _ZN29QGeoPositionInfoSourcePrivate3getERK22QGeoPositionInfoSource@Qt_5_PRIVATE_API 5.14.1
+ _ZN29QGeoPositionInfoSourcePrivate7pluginsEb@Qt_5_PRIVATE_API 5.14.1
+ _ZN29QGeoPositionInfoSourcePrivate8loadMetaEv@Qt_5_PRIVATE_API 5.14.1
+ _ZN29QGeoPositionInfoSourcePrivateD0Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN29QGeoPositionInfoSourcePrivateD1Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN29QGeoPositionInfoSourcePrivateD2Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN30QGeoSatelliteInfoSourcePrivate3getER23QGeoSatelliteInfoSource@Qt_5_PRIVATE_API 5.14.1
+ _ZN30QGeoSatelliteInfoSourcePrivateD0Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN30QGeoSatelliteInfoSourcePrivateD1Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN30QGeoSatelliteInfoSourcePrivateD2Ev@Qt_5_PRIVATE_API 5.14.1
+ _ZN31QGeoPositionInfoSourceFactoryV2D0Ev@Qt_5 5.14.1
+ _ZN31QGeoPositionInfoSourceFactoryV2D1Ev@Qt_5 5.14.1
+ _ZN31QGeoPositionInfoSourceFactoryV2D2Ev@Qt_5 5.14.1
  _ZN8QGeoPath13addCoordinateERK14QGeoCoordinate@Qt_5 5.9.0
  _ZN8QGeoPath14setVariantPathERK5QListI8QVariantE@Qt_5 5.11.0
  _ZN8QGeoPath16insertCoordinateEiRK14QGeoCoordinate@Qt_5 5.9.0
@@ -425,6 +499,7 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  _ZNK11QGeoPolygonneERKS_@Qt_5 5.10.1
  _ZNK12QGeoLocation10coordinateEv@Qt_5 5.6.0
  _ZNK12QGeoLocation11boundingBoxEv@Qt_5 5.6.0
+ _ZNK12QGeoLocation18extendedAttributesEv@Qt_5 5.14.1
  _ZNK12QGeoLocation7addressEv@Qt_5 5.6.0
  _ZNK12QGeoLocation7isEmptyEv@Qt_5 5.6.0
  _ZNK12QGeoLocationeqERKS_@Qt_5 5.6.0
@@ -459,6 +534,20 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  _ZNK15QDoubleVector3D14distanceToLineERKS_S1_@Qt_5_PRIVATE_API 5.6.0
  _ZNK15QDoubleVector3D15distanceToPlaneERKS_S1_S1_@Qt_5_PRIVATE_API 5.6.0
  _ZNK15QDoubleVector3D6lengthEv@Qt_5_PRIVATE_API 5.6.0
+ _ZNK15QGeoPathPrivate12coordinateAtEi@Qt_5_PRIVATE_API 5.14.1
+ _ZNK15QGeoPathPrivate12lineContainsERK14QGeoCoordinate@Qt_5_PRIVATE_API 5.14.1
+ _ZNK15QGeoPathPrivate18containsCoordinateERK14QGeoCoordinate@Qt_5_PRIVATE_API 5.14.1
+ _ZNK15QGeoPathPrivate20boundingGeoRectangleEv@Qt_5_PRIVATE_API 5.14.1
+ _ZNK15QGeoPathPrivate4pathEv@Qt_5_PRIVATE_API 5.14.1
+ _ZNK15QGeoPathPrivate4sizeEv@Qt_5_PRIVATE_API 5.14.1
+ _ZNK15QGeoPathPrivate5cloneEv@Qt_5_PRIVATE_API 5.14.1
+ _ZNK15QGeoPathPrivate5widthEv@Qt_5_PRIVATE_API 5.14.1
+ _ZNK15QGeoPathPrivate6centerEv@Qt_5_PRIVATE_API 5.14.1
+ _ZNK15QGeoPathPrivate6lengthEii@Qt_5_PRIVATE_API 5.14.1
+ _ZNK15QGeoPathPrivate7isEmptyEv@Qt_5_PRIVATE_API 5.14.1
+ _ZNK15QGeoPathPrivate7isValidEv@Qt_5_PRIVATE_API 5.14.1
+ _ZNK15QGeoPathPrivate8containsERK14QGeoCoordinate@Qt_5_PRIVATE_API 5.14.1
+ _ZNK15QGeoPathPrivateeqERK16QGeoShapePrivate@Qt_5_PRIVATE_API 5.14.1
  _ZNK16QDoubleMatrix4x410copyDataToEPd@Qt_5_PRIVATE_API 5.9.0
  _ZNK16QDoubleMatrix4x410transposedEv@Qt_5_PRIVATE_API 5.9.0
  _ZNK16QDoubleMatrix4x411determinantEv@Qt_5_PRIVATE_API 5.9.0
@@ -478,6 +567,13 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  _ZNK17QGeoSatelliteInfo19satelliteIdentifierEv@Qt_5 5.6.0
  _ZNK17QGeoSatelliteInfo9attributeENS_9AttributeE@Qt_5 5.6.0
  _ZNK17QGeoSatelliteInfoeqERKS_@Qt_5 5.6.0
+ _ZNK18QGeoPolygonPrivate10holesCountEv@Qt_5_PRIVATE_API 5.14.1
+ _ZNK18QGeoPolygonPrivate15polygonContainsERK14QGeoCoordinate@Qt_5_PRIVATE_API 5.14.1
+ _ZNK18QGeoPolygonPrivate5cloneEv@Qt_5_PRIVATE_API 5.14.1
+ _ZNK18QGeoPolygonPrivate7isValidEv@Qt_5_PRIVATE_API 5.14.1
+ _ZNK18QGeoPolygonPrivate8containsERK14QGeoCoordinate@Qt_5_PRIVATE_API 5.14.1
+ _ZNK18QGeoPolygonPrivate8holePathEi@Qt_5_PRIVATE_API 5.14.1
+ _ZNK18QGeoPolygonPrivateeqERK16QGeoShapePrivate@Qt_5_PRIVATE_API 5.14.1
  _ZNK19QGeoAreaMonitorInfo10expirationEv@Qt_5 5.6.0
  _ZNK19QGeoAreaMonitorInfo10identifierEv@Qt_5 5.6.0
  _ZNK19QGeoAreaMonitorInfo12isPersistentEv@Qt_5 5.6.0
@@ -491,30 +587,16 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  _ZNK20QGeoCoordinateObject10metaObjectEv@Qt_5_PRIVATE_API 5.11.0
  _ZNK20QGeoCoordinateObjecteqERK14QGeoCoordinate@Qt_5_PRIVATE_API 5.11.0
  _ZNK20QGeoCoordinateObjecteqERKS_@Qt_5_PRIVATE_API 5.11.0
+ _ZNK20QGeoPathPrivateEager5cloneEv@Qt_5_PRIVATE_API 5.14.1
  _ZNK21QGeoAreaMonitorSource10metaObjectEv@Qt_5 5.6.0
  _ZNK21QGeoAreaMonitorSource10sourceNameEv@Qt_5 5.6.0
  _ZNK21QGeoAreaMonitorSource18positionInfoSourceEv@Qt_5 5.6.0
- _ZNK22QDeclarativeGeoAddress10metaObjectEv@Qt_5_PRIVATE_API 5.6.0
- _ZNK22QDeclarativeGeoAddress10postalCodeEv@Qt_5_PRIVATE_API 5.6.0
- _ZNK22QDeclarativeGeoAddress11countryCodeEv@Qt_5_PRIVATE_API 5.6.0
- _ZNK22QDeclarativeGeoAddress15isTextGeneratedEv@Qt_5_PRIVATE_API 5.6.0
- _ZNK22QDeclarativeGeoAddress4cityEv@Qt_5_PRIVATE_API 5.6.0
- _ZNK22QDeclarativeGeoAddress4textEv@Qt_5_PRIVATE_API 5.6.0
- _ZNK22QDeclarativeGeoAddress5stateEv@Qt_5_PRIVATE_API 5.6.0
- _ZNK22QDeclarativeGeoAddress6countyEv@Qt_5_PRIVATE_API 5.6.0
- _ZNK22QDeclarativeGeoAddress6streetEv@Qt_5_PRIVATE_API 5.6.0
- _ZNK22QDeclarativeGeoAddress7addressEv@Qt_5_PRIVATE_API 5.6.0
- _ZNK22QDeclarativeGeoAddress7countryEv@Qt_5_PRIVATE_API 5.6.0
- _ZNK22QDeclarativeGeoAddress8districtEv@Qt_5_PRIVATE_API 5.6.0
  _ZNK22QGeoPositionInfoSource10metaObjectEv@Qt_5 5.6.0
  _ZNK22QGeoPositionInfoSource10sourceNameEv@Qt_5 5.6.0
  _ZNK22QGeoPositionInfoSource14updateIntervalEv@Qt_5 5.6.0
+ _ZNK22QGeoPositionInfoSource15backendPropertyERK7QString@Qt_5 5.14.1
  _ZNK22QGeoPositionInfoSource27preferredPositioningMethodsEv@Qt_5 5.6.0
- _ZNK23QDeclarativeGeoLocation10coordinateEv@Qt_5_PRIVATE_API 5.6.0
- _ZNK23QDeclarativeGeoLocation10metaObjectEv@Qt_5_PRIVATE_API 5.6.0
- _ZNK23QDeclarativeGeoLocation11boundingBoxEv@Qt_5_PRIVATE_API 5.6.0
- _ZNK23QDeclarativeGeoLocation7addressEv@Qt_5_PRIVATE_API 5.6.0
- _ZNK23QDeclarativeGeoLocation8locationEv@Qt_5_PRIVATE_API 5.6.0
+ _ZNK23QGeoPolygonPrivateEager5cloneEv@Qt_5_PRIVATE_API 5.14.1
  _ZNK23QGeoPositionInfoPrivate5cloneEv@Qt_5_PRIVATE_API 5.10.1
  _ZNK23QGeoPositionInfoPrivateeqERKS_@Qt_5_PRIVATE_API 5.10.1
  _ZNK23QGeoSatelliteInfoSource10metaObjectEv@Qt_5 5.6.0
@@ -528,6 +610,9 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  _ZNK23QNmeaPositionInfoSource27supportedPositioningMethodsEv@Qt_5 5.6.0
  _ZNK23QNmeaPositionInfoSource5errorEv@Qt_5 5.6.0
  _ZNK23QNmeaPositionInfoSource6deviceEv@Qt_5 5.6.0
+ _ZNK24QGeoSatelliteInfoPrivate5cloneEv@Qt_5_PRIVATE_API 5.14.1
+ _ZNK24QGeoSatelliteInfoPrivateeqERKS_@Qt_5_PRIVATE_API 5.14.1
+ _ZNK29QGeoPositionInfoSourcePrivate15backendPropertyERK7QString@Qt_5_PRIVATE_API 5.14.1
  _ZNK8QGeoPath10translatedEdd@Qt_5 5.9.0
  _ZNK8QGeoPath11variantPathEv@Qt_5 5.11.0
  _ZNK8QGeoPath12coordinateAtEi@Qt_5 5.9.0
@@ -555,34 +640,52 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  (optional=templinst)_ZNSt7__cxx114listIxSaIxEE4sortEv@Qt_5 5.10.1
  (optional=templinst|arch=ia64)_ZNSt7__cxx114listIxSaIxEE5mergeEOS2_@Qt_5 5.11.1
  _ZTI11QSharedData@Qt_5 5.6.0
+ _ZTI15QGeoPathPrivate@Qt_5_PRIVATE_API 5.14.1
+ _ZTI18QGeoPolygonPrivate@Qt_5_PRIVATE_API 5.14.1
  _ZTI20QGeoCoordinateObject@Qt_5_PRIVATE_API 5.11.0
+ _ZTI20QGeoPathPrivateEager@Qt_5_PRIVATE_API 5.14.1
  _ZTI21QGeoAreaMonitorSource@Qt_5 5.6.0
- _ZTI22QDeclarativeGeoAddress@Qt_5_PRIVATE_API 5.6.0
  _ZTI22QGeoPositionInfoSource@Qt_5 5.6.0
- _ZTI23QDeclarativeGeoLocation@Qt_5_PRIVATE_API 5.6.0
+ _ZTI23QGeoPolygonPrivateEager@Qt_5_PRIVATE_API 5.14.1
  _ZTI23QGeoPositionInfoPrivate@Qt_5_PRIVATE_API 5.10.1
  _ZTI23QGeoSatelliteInfoSource@Qt_5 5.6.0
  _ZTI23QNmeaPositionInfoSource@Qt_5 5.6.0
+ _ZTI24QGeoSatelliteInfoPrivate@Qt_5_PRIVATE_API 5.14.1
  _ZTI29QGeoPositionInfoSourceFactory@Qt_5 5.6.0
+ _ZTI29QGeoPositionInfoSourcePrivate@Qt_5_PRIVATE_API 5.14.1
+ _ZTI30QGeoSatelliteInfoSourcePrivate@Qt_5_PRIVATE_API 5.14.1
+ _ZTI31QGeoPositionInfoSourceFactoryV2@Qt_5 5.14.1
  _ZTS11QSharedData@Qt_5 5.6.0
+ _ZTS15QGeoPathPrivate@Qt_5_PRIVATE_API 5.14.1
+ _ZTS18QGeoPolygonPrivate@Qt_5_PRIVATE_API 5.14.1
  _ZTS20QGeoCoordinateObject@Qt_5_PRIVATE_API 5.11.0
+ _ZTS20QGeoPathPrivateEager@Qt_5_PRIVATE_API 5.14.1
  _ZTS21QGeoAreaMonitorSource@Qt_5 5.6.0
- _ZTS22QDeclarativeGeoAddress@Qt_5_PRIVATE_API 5.6.0
  _ZTS22QGeoPositionInfoSource@Qt_5 5.6.0
- _ZTS23QDeclarativeGeoLocation@Qt_5_PRIVATE_API 5.6.0
+ _ZTS23QGeoPolygonPrivateEager@Qt_5_PRIVATE_API 5.14.1
  _ZTS23QGeoPositionInfoPrivate@Qt_5_PRIVATE_API 5.10.1
  _ZTS23QGeoSatelliteInfoSource@Qt_5 5.6.0
  _ZTS23QNmeaPositionInfoSource@Qt_5 5.6.0
+ _ZTS24QGeoSatelliteInfoPrivate@Qt_5_PRIVATE_API 5.14.1
  _ZTS29QGeoPositionInfoSourceFactory@Qt_5 5.6.0
+ _ZTS29QGeoPositionInfoSourcePrivate@Qt_5_PRIVATE_API 5.14.1
+ _ZTS30QGeoSatelliteInfoSourcePrivate@Qt_5_PRIVATE_API 5.14.1
+ _ZTS31QGeoPositionInfoSourceFactoryV2@Qt_5 5.14.1
+ _ZTV15QGeoPathPrivate@Qt_5_PRIVATE_API 5.14.1
+ _ZTV18QGeoPolygonPrivate@Qt_5_PRIVATE_API 5.14.1
  _ZTV20QGeoCoordinateObject@Qt_5_PRIVATE_API 5.11.0
+ _ZTV20QGeoPathPrivateEager@Qt_5_PRIVATE_API 5.14.1
  _ZTV21QGeoAreaMonitorSource@Qt_5 5.6.0
- _ZTV22QDeclarativeGeoAddress@Qt_5_PRIVATE_API 5.6.0
  _ZTV22QGeoPositionInfoSource@Qt_5 5.6.0
- _ZTV23QDeclarativeGeoLocation@Qt_5_PRIVATE_API 5.6.0
+ _ZTV23QGeoPolygonPrivateEager@Qt_5_PRIVATE_API 5.14.1
  _ZTV23QGeoPositionInfoPrivate@Qt_5_PRIVATE_API 5.10.1
  _ZTV23QGeoSatelliteInfoSource@Qt_5 5.6.0
  _ZTV23QNmeaPositionInfoSource@Qt_5 5.6.0
+ _ZTV24QGeoSatelliteInfoPrivate@Qt_5_PRIVATE_API 5.14.1
  _ZTV29QGeoPositionInfoSourceFactory@Qt_5 5.6.0
+ _ZTV29QGeoPositionInfoSourcePrivate@Qt_5_PRIVATE_API 5.14.1
+ _ZTV30QGeoSatelliteInfoSourcePrivate@Qt_5_PRIVATE_API 5.14.1
+ _ZTV31QGeoPositionInfoSourceFactoryV2@Qt_5 5.14.1
  (optional=templinst)_ZZN9QMetaType17registerConverterI10QGeoCircle9QGeoShapePFS2_RKS1_EEEbT1_E1f@Qt_5 5.6.0
  (optional=templinst)_ZZN9QMetaType17registerConverterI11QGeoPolygon9QGeoShapePFS2_RKS1_EEEbT1_E1f@Qt_5 5.10.1
  (optional=templinst)_ZZN9QMetaType17registerConverterI13QGeoRectangle9QGeoShapePFS2_RKS1_EEEbT1_E1f@Qt_5 5.6.0

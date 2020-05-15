@@ -1,3 +1,29 @@
+qtlocation-opensource-src (5.14.2+dfsg-1) experimental; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.14.2.
+  * Backport patches to fix mapbox-gl-native build with GCC 10 (closes:
+    #957731).
+
+  [ Bas Couwenberg ]
+  * Drop libmapbox-variant-dev & libmapbox-wagyu-dev build dependencies
+    (closes: #952611).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 27 Apr 2020 22:20:23 +0300
+
+qtlocation-opensource-src (5.14.1+dfsg-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.14.1.
+  * Update debian/copyright.
+  * Stop installing QGeoPolygonPrivate include in qtpositioning5-dev.
+  * Update debian/libqt5location5.symbols from the current build log.
+  * Add weatherinfo icons licensing to debian/copyright.
+  * Bump Standards-Version to 4.5.0, no changes needed.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 26 Feb 2020 14:31:05 +0300
+
 qtlocation-opensource-src (5.12.8+dfsg-0ubuntu1) focal; urgency=medium
 
   * New upstream bugfix release.
@@ -11,18 +37,6 @@ qtlocation-opensource-src (5.12.5+dfsg-5ubuntu1) focal; urgency=medium
   * Ignore test failures on riscv64 for now. Some qml counts are wrong.
 
  -- William Grant <wgrant@ubuntu.com>  Mon, 06 Apr 2020 07:50:31 +1000
-
-qtlocation-opensource-src (5.12.5+dfsg-5build2) focal; urgency=medium
-
-  * No-change rebuild for icu soname change.
-
- -- Matthias Klose <doko@ubuntu.com>  Tue, 03 Mar 2020 21:36:50 +0100
-
-qtlocation-opensource-src (5.12.5+dfsg-5build1) focal; urgency=medium
-
-  * No-change rebuild for icu soname change.
-
- -- Matthias Klose <doko@ubuntu.com>  Thu, 13 Feb 2020 12:39:50 +0100
 
 qtlocation-opensource-src (5.12.5+dfsg-5) unstable; urgency=medium
 
