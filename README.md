@@ -13,7 +13,7 @@ https://salsa.debian.org/qt-kde-team/qt/qtlocation.git
 
   ```
   $ mk-build-deps -Pnodoc -s sudo -i
-  ## parallel=n: built using up to n parallel processes, n must a integer
+  ## parallel=n: built using up to n parallel processes, n must be a integer
   $ export DEB_BUILD_OPTIONS="parallel=n nocheck"
   $ dpkg-buildpackage -b --no-sign -Pnodoc
   ```
