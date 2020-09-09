@@ -1,5 +1,5 @@
-usr/lib/*/qt5/plugins/geoservices/libqtgeoservices_esri.so
-usr/lib/*/qt5/plugins/geoservices/libqtgeoservices_itemsoverlay.so
-usr/lib/*/qt5/plugins/geoservices/libqtgeoservices_mapbox.so
-usr/lib/*/qt5/plugins/geoservices/libqtgeoservices_nokia.so
-usr/lib/*/qt5/plugins/geoservices/libqtgeoservices_osm.so
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/geoservices/libqtgeoservices_esri.so
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/geoservices/libqtgeoservices_itemsoverlay.so
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/geoservices/libqtgeoservices_mapbox.so
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/geoservices/libqtgeoservices_nokia.so
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/geoservices/libqtgeoservices_osm.so
