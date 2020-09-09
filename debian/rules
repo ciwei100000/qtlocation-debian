@@ -19,9 +19,6 @@ override_dh_auto_build-indep:
 override_dh_auto_install-indep:
 	make INSTALL_ROOT=$(CURDIR)/debian/tmp install_docs
 
-override_dh_missing:
-	dh_missing --fail-missing
-
 override_dh_auto_test-arch:
 ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
 	$(MAKE) install -Csrc/imports INSTALL_ROOT=$(CURDIR)/test_root
@@ -29,11 +26,11 @@ ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
 	# mips* (#868745), sparc64 (#894726), ia64 (#929682), hppa (no bug).
 ifneq (,$(filter $(DEB_HOST_ARCH),hppa ia64 mips mips64el mipsel sparc64))
 	-xvfb-run -a -s "-screen 0 1024x768x24 +extension RANDR +extension RENDER +extension GLX" \
-		dh_auto_test -- -Ctests/auto HOME=$(CURDIR)/test_home \
+		dh_auto_test -- -Ctests/auto \
 		QML2_IMPORT_PATH=$(CURDIR)/test_root/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/qml
 else
 	xvfb-run -a -s "-screen 0 1024x768x24 +extension RANDR +extension RENDER +extension GLX" \
-		dh_auto_test -- -Ctests/auto HOME=$(CURDIR)/test_home \
+		dh_auto_test -- -Ctests/auto \
 		QML2_IMPORT_PATH=$(CURDIR)/test_root/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/qml
 endif
 endif
@@ -57,4 +54,4 @@ override_dh_auto_clean:
 	# Some other leftover binaries
 	rm -fv config.tests/geoclue/geoclue
 
-	rm -rf test_root test_home
+	rm -rf test_root
