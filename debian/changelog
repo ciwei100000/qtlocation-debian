@@ -3,6 +3,7 @@ qtlocation-opensource-src (5.15.1+dfsg-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * New upstream release.
   * Bump Qt build-dependencies to 5.15.1.
+  * Drop gcc10.diff, included in the new release.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 09 Sep 2020 21:15:10 +0300
 
