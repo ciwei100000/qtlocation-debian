@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.14.1 amd64
+# SymbolsHelper-Confirmed: 5.15.1 amd64 i386
 libQt5Positioning.so.5 libqt5positioning5 #MINVER#
 * Build-Depends-Package: qtpositioning5-dev
  Qt_5.0@Qt_5.0 5.6.0
@@ -7,6 +7,7 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  Qt_5.12@Qt_5.12 5.12.0
  Qt_5.13@Qt_5.13 5.14.1
  Qt_5.14@Qt_5.14 5.14.1
+ Qt_5.15@Qt_5.15 5.15.1
  Qt_5.1@Qt_5.1 5.6.0
  Qt_5.2@Qt_5.2 5.6.0
  Qt_5.3@Qt_5.3 5.6.0
@@ -418,7 +419,7 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  _ZN29QGeoPositionInfoSourceFactoryD2Ev@Qt_5 5.6.0
  _ZN29QGeoPositionInfoSourcePrivate10loadPluginEv@Qt_5_PRIVATE_API 5.14.1
  _ZN29QGeoPositionInfoSourcePrivate13pluginsSortedEv@Qt_5_PRIVATE_API 5.14.1
- _ZN29QGeoPositionInfoSourcePrivate18loadPluginMetadataER5QHashI7QString11QJsonObjectE@Qt_5_PRIVATE_API 5.14.1
+ _ZN29QGeoPositionInfoSourcePrivate18loadPluginMetadataER10QMultiHashI7QString11QJsonObjectE@Qt_5_PRIVATE_API 5.15.1
  _ZN29QGeoPositionInfoSourcePrivate18setBackendPropertyERK7QStringRK8QVariant@Qt_5_PRIVATE_API 5.14.1
  _ZN29QGeoPositionInfoSourcePrivate3getERK22QGeoPositionInfoSource@Qt_5_PRIVATE_API 5.14.1
  _ZN29QGeoPositionInfoSourcePrivate7pluginsEb@Qt_5_PRIVATE_API 5.14.1
@@ -634,8 +635,6 @@ libQt5Positioning.so.5 libqt5positioning5 #MINVER#
  _ZNK9QGeoShapeeqERKS_@Qt_5 5.6.0
  _ZNK9QGeoShapeneERKS_@Qt_5 5.6.0
  (optional=templinst)_ZNSt6vectorIxSaIxEE17_M_realloc_insertIJRKxEEEvN9__gnu_cxx17__normal_iteratorIPxS1_EEDpOT_@Qt_5 5.10.1
- (optional=templinst)_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1IS3_EEPKcRKS3_@Qt_5 5.12.3
- (optional=templinst)_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IS3_EEPKcRKS3_@Qt_5 5.12.3
  (optional=templinst)_ZNSt7__cxx114listIxSaIxEE4sortEv@Qt_5 5.10.1
  (optional=templinst|arch=ia64)_ZNSt7__cxx114listIxSaIxEE5mergeEOS2_@Qt_5 5.11.1
  _ZTI11QSharedData@Qt_5 5.6.0
