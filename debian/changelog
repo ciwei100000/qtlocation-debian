@@ -9,6 +9,7 @@ qtlocation-opensource-src (5.15.1+dfsg-1) UNRELEASED; urgency=medium
     - Stop exporting $HOME for tests, debhelper now does that itself.
     - Use ${DEB_HOST_MULTIARCH} substitution.
   * Update symbols files from the current build log.
+  * Update debian/copyright.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 09 Sep 2020 21:15:10 +0300
 
