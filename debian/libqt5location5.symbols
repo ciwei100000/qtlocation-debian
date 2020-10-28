@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.15.1 amd64 i386
+# SymbolsHelper-Confirmed: 5.15.1 amd64 i386 ia64
 libQt5Location.so.5 libqt5location5 #MINVER#
 * Build-Depends-Package: qtlocation5-dev
  Qt_5.0@Qt_5.0 5.6.0
@@ -3892,10 +3892,8 @@ libQt5Location.so.5 libqt5location5 #MINVER#
  _ZNK9QGeoRouteeqERKS_@Qt_5 5.6.0
  _ZNK9QGeoRouteneERKS_@Qt_5 5.6.0
  (optional=templinst|subst)_ZNSt6vectorIS_ISt5arrayIdL{size_t}2EESaIS1_EESaIS3_EE17_M_realloc_insertIJRKS3_EEEvN9__gnu_cxx17__normal_iteratorIPS3_S5_EEDpOT_@Qt_5 5.15.1
- (optional=templinst|arch=ia64)_ZNSt6vectorISt5arrayIdLm4EESaIS1_EE12emplace_backIJS1_EEERS1_DpOT_@Qt_5 5.11.1
  (optional=templinst|subst)_ZNSt6vectorISt5arrayIdL{size_t}2EESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_@Qt_5 5.12.2
  (optional=templinst|subst)_ZNSt6vectorISt5arrayIdL{size_t}4EESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_@Qt_5 5.12.2
- (optional=templinst|arch=ia64)_ZNSt6vectorIjSaIjEE12emplace_backIJRKjEEERjDpOT_@Qt_5 5.12.2
  (optional=templinst)_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_@Qt_5 5.12.2
  (optional=templinst)_ZNSt6vectorIxSaIxEE17_M_realloc_insertIJRKxEEEvN9__gnu_cxx17__normal_iteratorIPxS1_EEDpOT_@Qt_5 5.9.1
  (optional=templinst)_ZNSt7__cxx114listIxSaIxEE4sortEv@Qt_5 5.9.0
