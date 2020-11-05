@@ -148,6 +148,7 @@ Depends: libqt5location5 (= ${binary:Version}),
          qtbase5-dev,
          qtdeclarative5-dev,
          ${misc:Depends}
+Multi-Arch: same
 Description: Qt 5 Location development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -200,6 +201,7 @@ Section: doc
 Depends: ${misc:Depends}
 Breaks: qtpositioning5-doc (<< 5.5.0~)
 Replaces: qtpositioning5-doc (<< 5.5.0~)
+Multi-Arch: foreign
 Description: Qt 5 Location and Positioning QCH documentation
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -215,6 +217,7 @@ Section: doc
 Depends: ${misc:Depends}
 Breaks: qtpositioning5-doc-html (<< 5.5.0~)
 Replaces: qtpositioning5-doc-html (<< 5.5.0~)
+Multi-Arch: foreign
 Description: Qt 5 Location and Positioning HTML documentation
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -229,6 +232,7 @@ Section: libdevel
 Depends: ${misc:Depends}
 Breaks: qtlocation5-doc-html (<< 5.12.5+dfsg-3~)
 Replaces: qtlocation5-doc-html (<< 5.12.5+dfsg-3~)
+Multi-Arch: foreign
 Description: Qt 5 Location and Positioning tags files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
