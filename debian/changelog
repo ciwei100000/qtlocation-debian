@@ -1,9 +1,14 @@
 qtlocation-opensource-src (5.15.1+dfsg-3) UNRELEASED; urgency=medium
 
+  [ Debian Janitor ]
   * Apply multi-arch hints.
     + qtlocation5-dev: Add Multi-Arch: same.
     + qtlocation5-doc, qtlocation5-doc-dev, qtlocation5-doc-html: Add
       Multi-Arch: foreign.
+
+  [ Dmitry Shachnev ]
+  * Add powerpc to the list of architectures where QML engine is broken
+    (closes: #973519).
 
  -- Debian Janitor <janitor@jelmer.uk>  Thu, 05 Nov 2020 15:01:47 -0000
 

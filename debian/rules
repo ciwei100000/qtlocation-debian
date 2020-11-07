@@ -23,8 +23,8 @@ override_dh_auto_test-arch:
 ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
 	$(MAKE) install -Csrc/imports INSTALL_ROOT=$(CURDIR)/test_root
 	# Qt QML engine is broken on several architectures:
-	# mips* (#868745), sparc64 (#894726), ia64 (#929682), hppa (no bug).
-ifneq (,$(filter $(DEB_HOST_ARCH),hppa ia64 mips mips64el mipsel sparc64))
+	# mips* (#868745), sparc64 (#894726), ia64 (#929682), hppa (#973659), powerpc (#973519).
+ifneq (,$(filter $(DEB_HOST_ARCH),hppa ia64 mips mips64el mipsel powerpc sparc64))
 	-xvfb-run -a -s "-screen 0 1024x768x24 +extension RANDR +extension RENDER +extension GLX" \
 		dh_auto_test -- -Ctests/auto \
 		QML2_IMPORT_PATH=$(CURDIR)/test_root/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/qml
