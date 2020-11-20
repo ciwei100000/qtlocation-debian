@@ -10,6 +10,7 @@ qtlocation-opensource-src (5.15.2+dfsg-1) UNRELEASED; urgency=medium
   * Add powerpc to the list of architectures where QML engine is broken
     (closes: #973519).
   * New upstream release.
+  * Bump Qt build-dependencies to 5.15.2.
 
  -- Debian Janitor <janitor@jelmer.uk>  Thu, 05 Nov 2020 15:01:47 -0000
 
