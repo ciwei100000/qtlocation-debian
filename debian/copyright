@@ -112,7 +112,7 @@ License: Expat
 
 Files: src/3rdparty/clipper/*
 Copyright: 2010-2015 Angus Johnson
-License: Boost-1.0
+License: BSL-1.0
 
 Files: src/3rdparty/geosimplify.js/*
 Copyright: 2017 Daniel Patterson
@@ -128,7 +128,7 @@ License: ISC
 
 Files: src/3rdparty/mapbox-gl-native/deps/optional/*
 Copyright: 2011-2012 Andrzej Krzemienski
-License: Boost-1.0
+License: BSL-1.0
 
 Files: src/3rdparty/mapbox-gl-native/deps/geojson/*
        src/3rdparty/mapbox-gl-native/deps/geojsonvt/*
@@ -151,7 +151,7 @@ License: Expat
 
 Files: src/3rdparty/mapbox-gl-native/deps/unique_resource/*
 Copyright: 2015 Shintarou Okada
-License: Boost-1.0
+License: BSL-1.0
 
 Files: src/3rdparty/mapbox-gl-native/deps/variant/*
 Copyright: 2014-2017 Mapbox
@@ -164,12 +164,19 @@ License: Expat
 
 Files: src/3rdparty/mapbox-gl-native/src/csscolorparser/*
 Copyright: 2012 Dean McNamee
-           2014 Konstantin Käfer
+           2014-2017 Konstantin Käfer
 License: Expat
+
+Files: src/3rdparty/mapbox-gl-native/src/mbgl/util/mat2.*
+       src/3rdparty/mapbox-gl-native/src/mbgl/util/mat3.*
+       src/3rdparty/mapbox-gl-native/src/mbgl/util/mat4.*
+Copyright: 2013 Brandon Jones
+           2013 Colin MacKenzie IV
+License: Zlib
 
 Files: src/3rdparty/mapbox-gl-native/src/parsedate/*
 Copyright: 1998-2014 Daniel Stenberg, et al.
-License: Expat
+License: curl
 
 Files: src/3rdparty/mapbox-gl-native/vendor/nunicode/*
 Copyright: 2013 Aleksey Tulinov <aleksey.tulinov@gmail.com>
@@ -359,7 +366,7 @@ License: Expat
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
 
-License: Boost-1.0
+License: BSL-1.0
  Permission is hereby granted, free of charge, to any person or organization
  obtaining a copy of the software and accompanying documentation covered by
  this license (the "Software") to use, reproduce, display, distribute,
@@ -395,5 +402,42 @@ License: ISC
  OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
  PERFORMANCE OF THIS SOFTWARE.
 
+License: curl
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS.
+ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+ USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ Except as contained in this notice, the name of a copyright holder shall
+ not be used in advertising or otherwise to promote the sale, use or other
+ dealings in this Software without prior written authorization of the
+ copyright holder.
+
 License: public-domain
  The icons in this repository are herefore released into the Public Domain.
+
+License: Zlib
+ This software is provided 'as-is', without any express or implied warranty.
+ In no event will the authors be held liable for any damages arising from the
+ use of this software.
+ .
+ Permission is granted to anyone to use this software for any purpose,
+ including commercial applications, and to alter it and redistribute it
+ freely, subject to the following restrictions:
+ .
+ 1. The origin of this software must not be misrepresented; you must not claim
+    that you wrote the original software. If you use this software in a
+    product, an acknowledgment in the product documentation would be
+    appreciated but is not required.
+ .
+ 2. Altered source versions must be plainly marked as such, and must not be
+    misrepresented as being the original software.
+ .
+ 3. This notice may not be removed or altered from any source distribution.
