@@ -14,6 +14,7 @@ qtlocation-opensource-src (5.15.2+dfsg-1) UNRELEASED; urgency=medium
   * Build-depend only on the needed documentation tools, not on the
     large qttools5-dev-tools package.
   * Update debian/copyright.
+  * Add a symbols file for libqt5positioningquick5 package.
 
  -- Debian Janitor <janitor@jelmer.uk>  Thu, 05 Nov 2020 15:01:47 -0000
 
