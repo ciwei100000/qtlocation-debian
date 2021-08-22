@@ -1,3 +1,9 @@
+qtlocation-opensource-src (5.15.2+dfsg-2c1) unstable; urgency=medium
+
+  * Merge tag 'debian/5.15.2+dfsg-2' into ciwei100000
+
+ -- Xuqing Liu <ciwei100000@gmail.com>  Sun, 22 Aug 2021 08:15:35 -0700
+
 qtlocation-opensource-src (5.15.2+dfsg-2) unstable; urgency=medium
 
   * Bump Standards-Version to 4.5.1, no changes needed.
