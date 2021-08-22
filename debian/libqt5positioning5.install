@@ -1,1 +1,1 @@
-usr/lib/*/libQt5Positioning.so.*
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Positioning.so.*

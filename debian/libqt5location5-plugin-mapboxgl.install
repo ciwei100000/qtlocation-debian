@@ -1,1 +1,1 @@
-usr/lib/*/qt5/plugins/geoservices/libqtgeoservices_mapboxgl.so
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/geoservices/libqtgeoservices_mapboxgl.so

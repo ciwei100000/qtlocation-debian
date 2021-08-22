@@ -1,4 +1,3 @@
 use_system_dependencies.diff
 hurd_geoclue.diff
 mapboxgl_thread_portability.diff
-gcc10.diff

@@ -1,3 +1,52 @@
+qtlocation-opensource-src (5.15.2+dfsg-2) unstable; urgency=medium
+
+  * Bump Standards-Version to 4.5.1, no changes needed.
+  * Upload to unstable.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 11 Dec 2020 11:31:57 +0300
+
+qtlocation-opensource-src (5.15.2+dfsg-1) experimental; urgency=medium
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints.
+    + qtlocation5-dev: Add Multi-Arch: same.
+    + qtlocation5-doc, qtlocation5-doc-dev, qtlocation5-doc-html: Add
+      Multi-Arch: foreign.
+
+  [ Dmitry Shachnev ]
+  * Add powerpc to the list of architectures where QML engine is broken
+    (closes: #973519).
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.15.2.
+  * Build-depend only on the needed documentation tools, not on the
+    large qttools5-dev-tools package.
+  * Update debian/copyright.
+  * Add a symbols file for libqt5positioningquick5 package.
+  * Remove build path from .prl files for reproducibility.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 22 Nov 2020 20:10:08 +0300
+
+qtlocation-opensource-src (5.15.1+dfsg-2) unstable; urgency=medium
+
+  * Update debian/libqt5location5.symbols from buildds’ logs.
+  * Upload to unstable.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 28 Oct 2020 21:53:29 +0300
+
+qtlocation-opensource-src (5.15.1+dfsg-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.15.1.
+  * Drop gcc10.diff, included in the new release.
+  * Update to debhelper compat level 13.
+    - Drop dh_missing override, --fail-missing is now default behavior.
+    - Stop exporting $HOME for tests, debhelper now does that itself.
+    - Use ${DEB_HOST_MULTIARCH} substitution.
+  * Update symbols files from the current build log.
+  * Update debian/copyright.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 11 Sep 2020 17:25:25 +0300
+
 qtlocation-opensource-src (5.14.2+dfsg-2-c1) unstable; urgency=medium
 
   * Removed symbols files
