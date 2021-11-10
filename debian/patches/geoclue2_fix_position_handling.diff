@@ -1,0 +1,36 @@
+Description: fix position handling in geoclue2 plugin
+ The pre-existing code was incorrect due to the operation priority.
+ The result of the comparison was assigned to the variables, so they
+ were always initialized with 0 or 1 instead of real values.
+ .
+ Also use std::numeric_limits<double>::lowest(), because the altitude
+ can have a negative value (when we are below sea level).
+Origin: upstream, https://code.qt.io/cgit/qt/qtpositioning.git/commit/?id=70b7818e1fc585f8
+Last-Update: 2021-11-10
+
+--- a/src/plugins/position/geoclue2/qgeopositioninfosource_geoclue2.cpp
++++ b/src/plugins/position/geoclue2/qgeopositioninfosource_geoclue2.cpp
+@@ -410,7 +410,8 @@ void QGeoPositionInfoSourceGeoclue2::han
+     } else {
+         QGeoCoordinate coordinate(location.latitude(),
+                                   location.longitude());
+-        if (const auto altitude = location.altitude() > std::numeric_limits<double>::min())
++        const auto altitude = location.altitude();
++        if (altitude > std::numeric_limits<double>::lowest())
+             coordinate.setAltitude(altitude);
+ 
+         const Timestamp ts = location.timestamp();
+@@ -428,9 +429,11 @@ void QGeoPositionInfoSourceGeoclue2::han
+         m_lastPositionFromSatellite = qFuzzyCompare(accuracy, 0.0);
+ 
+         m_lastPosition.setAttribute(QGeoPositionInfo::HorizontalAccuracy, accuracy);
+-        if (const auto speed = location.speed() >= 0.0)
++        const auto speed = location.speed();
++        if (speed >= 0.0)
+             m_lastPosition.setAttribute(QGeoPositionInfo::GroundSpeed, speed);
+-        if (const auto heading = location.heading() >= 0.0)
++        const auto heading = location.heading();
++        if (heading >= 0.0)
+             m_lastPosition.setAttribute(QGeoPositionInfo::Direction, heading);
+ 
+         emit positionUpdated(m_lastPosition);
