@@ -4,6 +4,7 @@ qtlocation-opensource-src (5.15.2+dfsg-3) UNRELEASED; urgency=medium
   * Backport upstream patch to fix position handling in geoclue2 plugin
     (closes: #996040).
   * Update debian/watch: use format 4, and track only 5.15.x releases.
+  * Bump Standards-Version to 4.6.0, no changes needed.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 10 Nov 2021 21:26:56 +0300
 
