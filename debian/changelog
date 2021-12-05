@@ -1,3 +1,9 @@
+qtlocation-opensource-src (5.15.2+dfsg-3c1) unstable; urgency=medium
+
+  * Merge tag 'debian/5.15.2+dfsg-3' into ciwei100000
+
+ -- Xuqing Liu <ciwei100000@gmail.com>  Sun, 05 Dec 2021 02:26:22 -0800
+
 qtlocation-opensource-src (5.15.2+dfsg-3) unstable; urgency=medium
 
   * Backport upstream patch to fix position handling in geoclue2 plugin
